@@ -1,0 +1,447 @@
+﻿/*Four (4) Select List*/
+.four-list {
+    background: url('../img/next-child.png') 3px center repeat-x;
+}
+
+    .four-list .span3 {
+        padding-left: 15px;
+    }
+
+    .four-list select {
+        border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        -webkit-border-radius: 0 0 4px 4px;
+        -ms-border-radius: 0 0 4px 4px;
+        -o-border-radius: 0 0 4px 4px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+.select-header {
+    -moz-border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+    background: url("../img/backgrounds/nav.jpg") left top repeat-x;
+    border: 1px solid #CCC;
+    color: #333;
+    text-shadow: 1px 1px 0px #FFF;
+    border-bottom: 0px;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bold;
+    text-indent: 10px;
+}
+/*End Four (4) Select List*/
+
+/*Hidden File Upload (only show button)*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        background: red;
+        cursor: inherit;
+        display: block;
+    }
+
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+/*End Hidden File Upload (only show button)*/
+
+.mybtn {
+    padding: 4px 10px 4px 5px;
+    white-space: nowrap;
+}
+
+    .mybtn i {
+        margin-right: 5px;
+    }
+
+.table-filter {
+    font-size: 11px;
+    color: #333;
+    line-height: 16px;
+    width: 500px;
+    float: right;
+    padding: 5px;
+    text-align: right;
+}
+
+.customize .row-form {
+    padding: 5px 16px 5px 16px;
+}
+
+    .customize .row-form:last-child {
+        padding-bottom: 7px;
+    }
+
+    .customize .row-form:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .customize .row-form:nth-child(even) {
+        background-color: rgba(239, 239, 239, 0.10);
+    }
+
+.alert-info span.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    line-height: 20px;
+    color: black !important;
+    font-style: normal;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.customize .row-form span {
+    line-height: 20px;
+    color: Gray !important;
+    font-style: italic;
+}
+
+.alert {
+    position: relative;
+    cursor: text;
+}
+
+    .alert span.close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        line-height: 20px;
+        color: black !important;
+        font-style: normal;
+        font-weight: bold;
+        background-color: white;
+        padding: 0px 7px;
+        border-radius: 15px;
+        opacity: 1;
+        font-size: 11px;
+    }
+
+        .alert span.close:hover {
+            background-color: black !important;
+            color: white !important;
+            font-style: normal;
+            font-weight: bold;
+            cursor: pointer !important;
+        }
+
+
+    .alert span.message {
+        color: white !important;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.inline-msg {
+    line-height: 18px;
+    margin-bottom: 3px !important;
+}
+
+select.category {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 16px;
+}
+
+/*Article Accordion*/
+.article-basic-info {
+    height: 680px !important;
+}
+
+.article-detail-content {
+    height: 570px !important;
+}
+
+.article-seotag-info {
+    height: 140px !important;
+}
+
+.article-other-info {
+    height: 210px !important;
+}
+/*EndArticle Accordion*/
+
+/*Picture Accordion*/
+.picture-basic-info {
+    height: 640px !important;
+    overflow: hidden;
+}
+
+.picture-other-info {
+    height: 210px !important;
+    overflow: hidden;
+}
+/*EndArticle Accordion*/
+
+/*Staff Accordion*/
+.staff-basic-info {
+    height: 660px !important;
+    overflow: hidden;
+}
+
+.staff-contact-info {
+    height: 220px !important;
+    overflow: hidden;
+}
+
+.staff-other-info {
+    height: 150px !important;
+    overflow: hidden;
+}
+/*EndStaff Accordion*/
+
+/*Product Accordion*/
+.product-basic-info {
+    height: 1300px !important;
+}
+
+.product-detail-content {
+    height: 570px !important;
+}
+
+.product-seotag-info {
+    height: 140px !important;
+}
+
+.product-other-info {
+    height: 210px !important;
+}
+/*EndProduct Accordion*/
+
+/*Document Accordion*/
+.document-basic-info {
+    height: 740px !important;
+}
+
+.document-detail-content {
+    height: 570px !important;
+}
+
+.document-seotag-info {
+    height: 140px !important;
+}
+
+.document-other-info {
+    height: 210px !important;
+}
+/*End Document Accordion*/
+
+.center {
+    text-align: center !important;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle !important;
+}
+
+.block {
+    display: block;
+}
+
+td.avatar {
+    padding: 3px 0 !important;
+}
+
+
+.none-padding {
+    padding: 0 !important;
+}
+
+.none-margin {
+    margin: 0 !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.radio, .checkbox {
+    padding-left: 0;
+}
+
+.dropdown-icon {
+    width: 10px;
+}
+
+.input-icon {
+    width: 30px;
+}
+
+/*UserEdit tab accordion*/
+
+.account-category-post {
+    height: 260px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.account-basic-info {
+    height: 330px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.account-other-info {
+    height: 40px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.account-basic-info textarea {
+    min-height: 40px;
+    width: 100%;
+    line-height: 15px;
+    padding-top: 4px;
+}
+
+.account-basic-info img.avatar-preview {
+    height: 100px !important;
+}
+
+/*End UserEdit tab accordion*/
+
+.warning-mess {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+input[type="file"] {
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    width: 180px;
+    padding: 4px;
+    margin: 3px 0;
+    background-color: #486B91;
+    border-color: #486B91;
+    border-radius: 3px;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #5B7EA4, #486B91);
+    border: 1px solid #bbbbbb;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.checkbox.inline {
+    min-width: 150px;
+}
+
+.function .btn {
+    display: block;
+    margin: 4px 0;
+    padding: 4px 5px 5px 10px;
+    text-align: left;
+}
+
+.header .header_menu {
+    display: block;
+    float: left;
+    padding: 3px 0 0 3px;
+    margin: 0;
+    list-style: none;
+}
+
+.header .info {
+    display: block;
+    float: right;
+    padding: 8px 20px 0 0;
+    font-weight: 700;
+    height: 50px;
+    color: #fff;
+}
+
+    .header .info a {
+        color: #fff;
+    }
+
+.ui-accordion .ui-accordion-content-active {
+    height: auto !important;
+    overflow: hidden !important;
+}
+
+/*Upload*/
+.file-upload-container {
+    position: relative;
+}
+
+    .file-upload-container a > img {
+        width: 179px;
+        max-width: 179px;
+        height: 100px;
+    }
+
+    .file-upload-container .file-upload-url-remove {
+        height: 17px !important;
+        color: white !important;
+        margin-top: 0px;
+        font-size: 12px !important;
+        padding: 2px 10px 5px 10px;
+    }
+
+    .file-upload-container span.file-upload-thumb-remove {
+        position: absolute;
+        left: 158px;
+        top: 1px;
+        z-index: 999;
+        border-radius: 0 0 0 50%;
+        height: 15px !important;
+        color: white !important;
+        margin-top: 0px;
+        font-size: 13px !important;
+        font-style: normal;
+        padding: 2px 10px 6px 10px;
+    }
+
+    .file-upload-container .full-file-url {
+        border-radius: 5px 0 0 5px;
+    }
+
+.mce-branding-powered-by {
+    display: none;
+}
+
+/*Auto height text-area*/
+textarea.auto-height {
+    min-height: 50px;
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/*DB manager*/
+.db-manager #input_Username, .db-manager #input_Password {
+    width: 272px;
+    height: 30px;
+}
+
+.db-manager fieldset {
+}
+
+    .db-manager fieldset .fieldset-content {
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d9ab095ed31c4e0990ff4bb3534edf3b" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="DBModel.Account" Width="1.5" PointX="3" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.AccountCategory" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Article" Width="1.5" PointX="8.25" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ArticleCategory" Width="1.5" PointX="10.5" PointY="40.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ArticleMainCategory" Width="1.5" PointX="5.25" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Client" Width="1.5" PointX="7.5" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ClientCategory" Width="1.5" PointX="5.25" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Contact" Width="1.5" PointX="7.5" PointY="51.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ContactCategory" Width="1.5" PointX="5.25" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Order" Width="1.5" PointX="13.5" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.OrderDetail" Width="1.5" PointX="15.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Picture" Width="1.5" PointX="5.25" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.PictureCategory" Width="1.5" PointX="7.5" PointY="55.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.PictureMainCategory" Width="1.5" PointX="5.25" PointY="70.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Product" Width="1.5" PointX="11.25" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ProductCategory" Width="1.5" PointX="7.5" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ProductMainCategory" Width="1.5" PointX="5.25" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Staff" Width="1.5" PointX="8.25" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.StaffCategory" Width="1.5" PointX="7.5" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.StaffMainCategory" Width="1.5" PointX="5.25" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DBModel.FK__Picture__CreateB__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__PictureCa__Creat__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__PictureMa__Creat__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ACCOUNT_ACCOUNTTY_ACCOUNTT" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ARTICLE_ACCOUNT_A_ACCOUNT" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ARTICLEC_ACCOUNT_A_ACCOUNT" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ARTICLEM_ACCOUNT_A_ACCOUNT" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Client_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ClientCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Contact_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ContactCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Product_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ProductCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ProductMainCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Staff_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_StaffCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_StaffMainCategory_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ARTICLE_ARTICLECA_ARTICLEC" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ARTICLEC_ARTICLEMA_ARTICLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Client_ClientCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Order_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Contact_ContactCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Order_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_OrderDetail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_OrderDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Picture__Picture__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__PictureCa__Pictu__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_ProductCategory_ProductMainCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Staff_StaffCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_StaffCategory_StaffMainCategory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

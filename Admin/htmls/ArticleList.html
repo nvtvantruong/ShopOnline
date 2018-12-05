@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Dasboard - Bàn làm việc
+    </title>
+    <meta http-equiv="refresh" content="1860" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--CSS-->
+    <link rel="icon" href="/Admin/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="/Admin/css/full-css-import.css" />
+    <script src="/Admin/javascript/fullobf.js" charset="utf-8"></script>
+    <script src="/tinyeditor/1.jquery.tinymce.min.js"></script>
+    <script src="/tinyeditor/2.tinymce.min.js"></script>
+    <script src="/tinyeditor/3.tinymce.customfunction.js"></script>
+</head>
+<body>
+    <form>
+        <div class="wrapper">
+
+            <div class="header">
+                <!--Nút ẩn/hiện menu bên góc trái-->
+                <ul class="header_menu">
+                    <li class="list_icon"><a href="#" class="tipr" title="Truy cập nhanh menu">&nbsp;</a></li>
+                </ul>
+                <!--Logo-->
+                <a href="Default.html" class="logo">
+                    COMPUTING - ADMIN CONTROL PANEL
+                </a>
+            </div>
+
+            <div class="menu">
+                <div class="breadLine">
+                    <div class="arrow"></div>
+                    <div class="adminControl active">
+                        Xin chào, <b>admin</b>
+                    </div>
+                </div>
+
+                <div class="admin">
+                    <div class="image">
+                        <img src="../../FileUploads/Account/8761ea0b-776c-4504-a845-58d5617d90f4.png" class="use-avatar" />
+                    </div>
+                    <ul class="control">
+                        <li>
+                            <span class="icon-user"></span>
+                            <a href="AccountEdit.html?id=admin">Lê Minh Hiếu</a>
+                        </li>
+                        <li>
+                            <span class="icon-cog"></span>
+                            <a href="AccountPasswordChange.html">Đổi mật khẩu</a>
+                        </li>
+                        <li>
+                            <span class="icon-off"></span>
+                            <a href="#">Thoát</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="navigation">
+                    <!--Dasboard-->
+                    <li class="active">
+                        <a href="Default.html">
+                            <span class="isw-grid"></span>
+                            <span class="text">Bàn Làm Việc</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--AccountCategory-->
+                    <li>
+                        <a href="AccountCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Tài Khoản</span>
+                        </a>
+                    </li>
+
+                    <!--Account-->
+                    <li>
+                        <a href="AccountList.html">
+                            <span class="isw-users"></span>
+                            <span class="text">Tài Khoản</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--ArticleMainCategory-->
+                    <li>
+                        <a href="ArticleMainCategoryList.html">
+                            <span class="isw-folder"></span>
+                            <span class="text">Loại Tin Tức - Cấp Cha</span>
+                        </a>
+                    </li>
+                    <!--ArticleCategory-->
+                    <li>
+                        <a href="ArticleCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Tin Tức - Cấp Con</span>
+                        </a>
+                    </li>
+
+                    <!--Article-->
+                    <li>
+                        <a href="ArticleList.html">
+                            <span class="isw-documents"></span>
+                            <span class="text">Tin Tức</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--PictureMainCategory-->
+                    <li>
+                        <a href="PictureMainCategoryList.html">
+                            <span class="isw-folder"></span>
+                            <span class="text">Loại Hình Ảnh - Cấp Cha</span>
+                        </a>
+                    </li>
+                    <!--PictureCategory-->
+                    <li>
+                        <a href="PictureCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Hình Ảnh - Cấp Con</span>
+                        </a>
+                    </li>
+
+                    <!--Picture-->
+                    <li>
+                        <a href="PictureList.html">
+                            <span class="isw-picture"></span>
+                            <span class="text">Hình Ảnh</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--ContactCategory-->
+                    <li>
+                        <a href="ContactCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Thư Liên Hệ</span>
+                        </a>
+                    </li>
+
+                    <!--Contact-->
+                    <li>
+                        <a href="ContactList.html">
+                            <span class="isw-mail"></span>
+                            <span class="text">Thư Liên Hệ</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+
+                <div class="breadLine">
+                    <ul class="breadcrumb">
+                        <!--Nút ẩn/hiện menu bên góc trái-->
+                        <li>
+                            <a href="#" title="Ẩn thanh menu" class="sidebarControl menu-arrow">
+                                <span class="icon-arrow-left"></span>
+                            </a>
+                        </li>
+                        <!--Thanh breadcrumb-->
+                        <li>
+                            <a href="Default.html">Bàn Làm Việc</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="ArticleCategoryList.html">Loại Tin Tức</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="#">Danh Sách Tin Tức</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="workplace">
+                    <div class="page-header">
+                        <h1>
+                            Danh sách tin tức
+                        </h1>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="head clearfix">
+                                <div class="isw-grid">
+                                </div>
+                                <h1>
+                                    Danh sách tin tức
+                                </h1>
+                                <ul class="buttons">
+                                    <li><a href="ArticleEdit.html" class="isw-plus tip" title="Thêm mới"></a></li>
+                                    <li><a href="#" class="isw-delete tip" title="Xóa chọn" onclick="alert('Chức năng xóa hàng loạt này hiện chưa có.')"></a></li>
+                                </ul>
+                            </div>
+                            <div class="block-fluid table-sorting clearfix">
+                                <!--Filter-->
+                                <div class="dataTables_filter">
+                                    <div class="input-append">
+
+                                        <select style="margin-right: 10px; border-radius: 4px;"></select>
+                                        <input type="text" placeholder="Lọc theo tiêu đề (tiếng Việt có dấu)" style="width: 250px" />
+                                        <a class="btn mybtn input-icon link-search" style="width:16px;">
+                                            <i class="isw-zoom"></i>&nbsp;
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="dataTables_length">
+                                    <a class="btn input-icon" style="width: 80px;">
+                                        <i class="isw-cancel"></i>Hủy bộ lọc
+                                    </a>
+                                </div>
+
+                                <!--Content-->
+                                <table cellpadding="0" cellspacing="0" width="100%" class="table" id="tPagging">
+                                    <thead>
+                                        <tr>
+                                            <th width="25px" class="center">
+                                                <input type="checkbox" name="checkall" />
+                                            </th>
+                                            <th width="50px" class="center">
+                                                Hình
+                                            </th>
+                                            <th width="50px" class="center">
+                                                Mã số
+                                            </th>
+                                            <th>
+                                                Tiêu đề / Lượt xem / Loại / Mô tả
+                                            </th>
+                                            <th width="100px" class="center">
+                                                Người đăng /Ngày
+                                            </th>
+                                            <th width="200px" class="center">
+                                                Xem / Xóa / Sửa
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="center middle">
+                                                <input type="checkbox" name="checkbox" />
+                                            </td>
+                                            <td width="102" class="center middle avatar">
+                                                <a href="../../fileuploads/article/nu-phong-vien-yeu-nhung-0096-1.jpg" class="fancybox lightbox-preview" rel="group" title="ID: 793 - Tiêu đề: Nữ phóng viên yêu những style đối lập">
+                                                    <img src="../../fileuploads/article/thumbs/nu-phong-vien-yeu-nhung-0096-1.jpg" alt="avatar" style="width: 92px; height: 92px; margin-bottom: 2px;" class="default-image img-polaroid avatar-preview-793" original="~/fileuploads/article/thumbs/nu-phong-vien-yeu-nhung-0096-1.jpg" />
+                                                </a>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-small btn-success btn-file" style="width: 102px; cursor: pointer;">
+                                                        <span class="icon-camera icon-white"></span> Thay hình
+                                                        <input type="file" class="skip" preview="avatar-preview-793" />
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group none-margin hide save-cancel-function">
+                                                    <a title="Lưu hình" class="btn btn-warning tip save">
+                                                        <i class="isw-save"></i>
+                                                    </a>
+                                                    <button class="btn btn-inverse tip cancel" title="Hủy lệnh">
+                                                        <i class="isw-cancel"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="center middle">
+                                                793
+                                            </td>
+                                            <td class="middle">
+                                                <h4>
+                                                    Nữ phóng viên yêu những style đối lập
+                                                    (143 lượt xem)
+                                                </h4>
+                                                <p>Loại: <b>Văn hóa - Thời trang</b></p>
+                                                <p align="justify">Nữ phóng viên yêu những style đối lập. Những phong cách tưởng chừng như mẫu thuẫn trong thời trang đều được Phương Dung yêu thích.</p>
+                                            </td>
+                                            <td class="center middle">
+                                                admin<br /><br />
+                                                09/09/2014<br />12:41:00
+                                            </td>
+                                            <td class="center middle function">
+                                                <p class="info">
+                                                    <a title="ID: 793 - Tiêu đề: Nữ phóng viên yêu những style đối lập" class="btn btn-small btn-block block tip fancybox-iframe" href="ArticleDetail.html?id=793">
+                                                        <span class="icon-zoom-in icon-white"></span> Hiển thị chi tiết
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-block block tip" href="ArticleEdit.html?id=793">
+                                                        <span class="icon-edit icon-white"></span> Chỉnh sửa thông tin
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-block block tip">
+                                                        <span class="icon-trash icon-white"></span> Xóa dữ liệu này
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-success tip">
+                                                        <span class='icon-ok icon-white'></span>
+                                                        Đang kích hoạt, Tạm khóa lại
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="center middle">
+                                                <input type="checkbox" name="checkbox" />
+                                            </td>
+                                            <td width="102" class="center middle avatar">
+                                                <a href="../../fileuploads/article/ho-ngoc-ha-khep-lai-chuyen-aa43-1.jpg" class="fancybox lightbox-preview" rel="group" title="ID: 663 - Tiêu đề: Hồ Ngọc Hà khép lại chuyện tình với  người yêu màn ảnh">
+                                                    <img src="../../fileuploads/article/thumbs/ho-ngoc-ha-khep-lai-chuyen-aa43-1.jpg" alt="avatar" style="width: 92px; height: 92px; margin-bottom: 2px;" class="default-image img-polaroid avatar-preview-663" original="~/fileuploads/article/thumbs/ho-ngoc-ha-khep-lai-chuyen-aa43-1.jpg" />
+                                                </a>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-small btn-success btn-file" style="width: 102px; cursor: pointer;">
+                                                        <span class="icon-camera icon-white"></span> Thay hình
+                                                        <input type="file" class="skip" preview="avatar-preview-663" />
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group none-margin hide save-cancel-function">
+                                                    <a title="Lưu hình" class="btn btn-warning tip save">
+                                                        <i class="isw-save"></i>
+                                                    </a>
+                                                    <button class="btn btn-inverse tip cancel" title="Hủy lệnh">
+                                                        <i class="isw-cancel"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="center middle">
+                                                663
+                                            </td>
+                                            <td class="middle">
+                                                <h4>
+                                                    Hồ Ngọc Hà khép lại chuyện tình với  người yêu màn ảnh
+                                                    (909 lượt xem)
+                                                </h4>
+                                                <p>Loại: <b>Văn hóa - Âm nhạc</b></p>
+                                                <p align="justify">Hồ Ngọc Hà khép lại chuyện tình với  người yêu màn ảnh . Trong MV chuẩn bị phát hành, Hồ Ngọc Hà sẽ kết hợp lần cuối cùng người mẫu Edward.</p>
+                                            </td>
+                                            <td class="center middle">
+                                                admin<br /><br />
+                                                09/09/2014<br />12:17:00
+                                            </td>
+                                            <td class="center middle function">
+                                                <p class="info">
+                                                    <a title="ID: 663 - Tiêu đề: Hồ Ngọc Hà khép lại chuyện tình với  người yêu màn ảnh" class="btn btn-small btn-block block tip fancybox-iframe" href="ArticleDetail.html?id=663">
+                                                        <span class="icon-zoom-in icon-white"></span> Hiển thị chi tiết
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-block block tip" href="ArticleEdit.html?id=663">
+                                                        <span class="icon-edit icon-white"></span> Chỉnh sửa thông tin
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-block block tip">
+                                                        <span class="icon-trash icon-white"></span> Xóa dữ liệu này
+                                                    </a>
+
+                                                    <a class="btn btn-small btn-success tip">
+                                                        <span class='icon-ok icon-white'></span>
+                                                        Đang kích hoạt, Tạm khóa lại
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--Pagging-->
+                                <div class="dataTables_info">
+                                    Trang
+                                    <b>
+                                        1
+                                    </b>
+                                    của
+                                    <b>
+                                        262
+                                    </b>
+                                    (Tổng cộng:
+                                    <b>
+                                        1307
+                                    </b>
+                                    item)
+                                </div>
+                                <div class="dataTables_paginate paging_full_numbers">
+                                    <a class="paginate_button">&lt;&lt;</a>
+                                    <a class="paginate_button">&lt;</a>
+                                    <span>
+                                        <a class="paginate_active">
+                                            1
+                                        </a>
+
+                                        <a class="paginate_button">
+                                            2
+                                        </a>
+                                    </span>
+                                    <a class="paginate_button">&gt;</a>
+                                    <a class="paginate_button">&gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/UserControls/ucMenu.ascx" TagPrefix="uc1" TagName="ucMenu" %>
+<%@ Register Src="~/UserControls/ucUpperHeader.ascx" TagPrefix="uc1" TagName="ucUpperHeader" %>
+<%@ Register Src="~/UserControls/ucMiniShoppingCart.ascx" TagPrefix="uc1" TagName="ucMiniShoppingCart" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="/css/images/favicon.ico" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/jquery-ui-1.10.1.min.css" />
+    <link rel="stylesheet" href="/css/customize.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/flexslider.css" />
+    <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="/css/blue.css" />
+    <link rel="stylesheet" href="/css/loading.css" />
+
+
+    <!--JS-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/jquery.cycle2.min.js"></script>
+    <script src="/js/jquery.cycle2.carousel.min.js"></script>
+    <script src="/js/jquery.tweet.js"></script>
+    <script src="/js/fancybox/jquery.fancybox.js"></script>
+    <script src="/js/custom.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" />
+
+        <asp:UpdateProgress runat="server" DisplayAfter="0" DynamicLayout="true">
+            <ProgressTemplate>
+                <div class="loading"></div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+
+        <div id="mainContainer" class="clearfix">
+            <header>
+                <%--ucUpperHeader--%>
+                <uc1:ucUpperHeader runat="server" ID="ucUpperHeader" />
+
+
+                <div class="middleHeader">
+                    <div class="container">
+                        <div class="middleContainer clearfix">
+                            <div class="siteLogo pull-left">
+                                <h1>
+                                    <a href="Default.aspx">ShopFine</a>
+                                </h1>
+                            </div>
+
+                            <%--ucMiniShoppingCart--%>
+                            <uc1:ucMiniShoppingCart runat="server" ID="ucMiniShoppingCart" />
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <%-- ucMenu --%>
+                <uc1:ucMenu runat="server" ID="ucMenu" />
+
+            </header>
+
+            <asp:ContentPlaceHolder runat="server" ID="content">
+                <%--Vị trí dành cho trang con nhúng vào--%>
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <div class="footerOuter">
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="titleHeader clearfix">
+                                    <h3>Hỗ trợ khách hàng</h3>
+                                </div>
+                                <div class="usefullLinks">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <ul class="unstyled">
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Giới thiệu công ty
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Tiêu chí bán hàng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Danh sách đối tác
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hệ thống các siêu thị
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="span6">
+                                            <ul class="unstyled">
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hướng dẫn mua hàng online
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hướng dẫn thanh toán
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Chính sách đổi - trả - bảo hành
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Chăm sóc khách hàng
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="titleHeader clearfix">
+                                    <h3>Thông Tin Liên Hệ</h3>
+                                </div>
+                                <div class="contactInfo">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-volume-up"></i></button>
+                                            <a class="invarseColor" href="#">083.876.678</a>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-envelope-alt"></i></button>
+                                            <a class="invarseColor" href="#">ltv.pro@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-map-marker"></i></button>
+                                            88 Đại Lộ BD, TDM, BD.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="span3">
+                                <div class="titleHeader clearfix">
+                                    <h3>Đăng Ký Nhận QC</h3>
+                                </div>
+                                <div class="newslatter">
+                                    <div>
+                                        <input class="input-block-level" type="text" placeholder="Mời nhập họ tên..." />
+                                        <input class="input-block-level" type="text" placeholder="Mời nhập email..." />
+                                        <button class="btn btn-block" type="submit">Đăng Ký</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="payments inline pull-right">
+                                <li class="visia"></li>
+                                <li class="paypal"></li>
+                                <li class="electron"></li>
+                                <li class="discover"></li>
+                            </ul>
+                            <p>© Copyrights 2016 LTV.Pro</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+</body>
+</html>

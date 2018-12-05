@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Đăng nhập
+    </title>
+    <!--Cấu hình để chạy trên đa thiết bị: máy tính, máy tính bảng, điện thoại, ...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--Icon hiển thị trên trình duyệt-->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <!--Css chính-->
+    <link href="/Admin/css/full-css-import.css" rel="stylesheet" />
+    <!--Hack css theo trình duyệt-->
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+</head>
+<body>
+    <form>
+        <div class="loginBlock" style="display: block;">
+            <h1>Đăng nhập hệ thống</h1>
+            <div class="loginForm">
+                <!--Username-->
+                <div class="control-group">
+                    <div class="input-prepend">
+                        <span class="add-on"><span class="icon-user"></span></span>
+                        <input type="text" placeholder="Username" />
+                    </div>
+                </div>
+
+                <!--Password-->
+                <div class="control-group">
+                    <div class="input-prepend">
+                        <span class="add-on"><span class="icon-lock"></span></span>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                </div>
+
+                <!--Remember + Login button-->
+                <div class="row-fluid">
+                    <!--Lưu mật khẩu-->
+                    <div class="span8">
+                        <div class="control-group" style="margin-top: 5px;">
+                            <label class="checkbox">
+                                <input type="checkbox" />
+                                Lưu mật khẩu trên máy này
+                            </label>
+                        </div>
+                    </div>
+                    <!--Nút đăng nhập-->
+                    <div class="span4">
+                        <input type="submit" value="Đăng nhập" class="btn btn-block" />
+                    </div>
+                </div>
+
+                <!--Thông báo-->
+                <div id="ucMessage_div_MessageBox" class="alert alert-danger inline-msg">
+                    <b id="ucMessage_b_Title">Thông báo:</b>
+                    <span id="ucMessage_span_Message" class="message">Tài khoản không hợp lệ</span>
+                    <span class="close" title="Ẩn thông báo">X</span>
+                </div>
+
+                <!--Đường phân cách-->
+                <div class="dr"><span></span></div>
+
+                <!--Quên mật khẩu-->
+                <div class="controls hidden">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <button class="btn btn-link btn-block">
+                                Quên mật khẩu?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

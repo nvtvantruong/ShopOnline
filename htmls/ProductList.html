@@ -1,0 +1,779 @@
+﻿
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ShopFine: eCommerce Website
+    </title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="/css/images/favicon.ico" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/jquery-ui-1.10.1.min.css" />
+    <link rel="stylesheet" href="/css/customize.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/flexslider.css" />
+    <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="/css/blue.css" />
+
+
+    <!--JS-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/jquery.cycle2.min.js"></script>
+    <script src="/js/jquery.cycle2.carousel.min.js"></script>
+    <script src="/js/jquery.tweet.js"></script>
+    <script src="/js/fancybox/jquery.fancybox.js"></script>
+    <script src="/js/custom.js"></script>
+
+</head>
+<body>
+    <form method="post" action="./ProductList.html" id="form1">
+        <div id="mainContainer" class="clearfix">
+            <header>
+
+
+
+                <div class="upperHeader">
+                    <div class="container">
+                        <ul class="pull-right inline">
+                            <li>
+                                <a href="Account.html" class="invarseColor">Tài Khoản</a>
+                            </li>
+                            <li class="divider-vertical"></li>
+                            <li>
+                                <a href="ProductShoppingCart.html" class="invarseColor">Giỏ Hàng</a>
+                            </li>
+                            <li class="divider-vertical"></li>
+                            <li>
+                                <a href="ProductCheckout.html" class="invarseColor">Thanh Toán</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Chào mừng đến với Shop Online,
+                            <a href="AccountLogin.html">Đăng nhập</a> hoặc
+                            <a href="AccountRegister.html">Đăng ký</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="middleHeader">
+                    <div class="container">
+                        <div class="middleContainer clearfix">
+                            <div class="siteLogo pull-left">
+                                <h1>
+                                    <a href="Default.html">ShopFine</a>
+                                </h1>
+                            </div>
+
+
+
+                            <div class="pull-right">
+                                <div class="btn-group">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-shopping-cart"></i>&nbsp;Bạn đã chọn <b>3</b> sản phẩm&nbsp;<span class="caret"></span></a>
+                                    <div class="dropdown-menu cart-content pull-right">
+                                        <table class="table-cart">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="cart-product-info">
+                                                        <a href="#">
+                                                            <img src="/css/images/72x72.jpg" />
+                                                        </a>
+                                                        <div class="cart-product-desc">
+                                                            <p>
+                                                                <a class="invarseColor" href="#">Foliomania the designer portfolio brochure</a>
+                                                            </p>
+                                                            <ul class="unstyled">
+                                                                <li>Số lượng: <b>3</b></li>
+                                                                <li>Giá bán: <b>$400</b></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="cart-product-setting">
+                                                        <a href="#" class="remove-pro" data-toggle="tooltip" data-title="Xóa khỏi giỏ hàng"><i class="icon-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cart-product-info">
+                                                        <a href="#">
+                                                            <img src="/css/images/72x72.jpg" />
+                                                        </a>
+                                                        <div class="cart-product-desc">
+                                                            <p>
+                                                                <a class="invarseColor" href="#">Foliomania the designer portfolio brochure</a>
+                                                            </p>
+                                                            <ul class="unstyled">
+                                                                <li>Số lượng: <b>3</b></li>
+                                                                <li>Giá bán: <b>$400</b></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td class="cart-product-setting">
+                                                        <a href="#" class="remove-pro" data-toggle="tooltip" data-title="Xóa khỏi giỏ hàng"><i class="icon-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="cart-product-info">
+                                                        <a href="#" class="btn btn-small">Xem giỏ hàng</a>
+                                                        <a href="#" class="btn btn-small btn-primary">Thanh toán</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <h3>
+                                                            Tổng Cộng
+                                                            <br />
+                                                            $1,598.30
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="mainNav">
+                    <div class="container">
+                        <div class="navbar">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="#"><i class="icon-home"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">Các Trang<i class="icon-caret-down"></i></a>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="Default.html"><span>-</span> Default</a>
+                                            </li>
+                                            <li>
+                                                <a href="Account.html"><span>-</span> Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="AccountInformation.html"><span>-</span> Account Information</a>
+                                            </li>
+                                            <li>
+                                                <a href="AccountLogin.html"><span>-</span> Account Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="AccountRegister.html"><span>-</span> Account Register</a>
+                                            </li>
+                                            <li>
+                                                <a href="AccountWishlist.html"><span>-</span> Account Wish list</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductList.html"><span>-</span> Product List</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductGrid.html"><span>-</span> Product Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductDetail.html"><span>-</span> Product Detail</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductSearch.html"><span>-</span> Product Search</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductShoppingCart.html"><span>-</span> Product Shopping Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductCheckout.html"><span>-</span> Product Checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="ProductCompare.html"><span>-</span> Product Compare</a>
+                                            </li>
+                                            <li>
+                                                <a href="ArticleList.html"><span>-</span> Article List</a>
+                                            </li>
+                                            <li>
+                                                <a href="ArticleDetail.html"><span>-</span> Article Detail</a>
+                                            </li>
+                                            <li>
+                                                <a href="Contact.html"><span>-</span> Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Điện Thoại  <i class="icon-caret-down"></i></a>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><span>-</span>Iphone</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span>-</span>SamSung</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span>-</span>Sony XperiaZ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Máy Tính Bảng  <i class="icon-caret-down"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">Laptop</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin Tức Công Nghệ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên Hệ</a>
+                                </li>
+                                <li>
+                                    <a href="Account.html"><span>-</span>Tài Khoản</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="span9">
+                        <div class="titleHeader clearfix">
+                            <h3>Danh Sách Sản Phẩm</h3>
+                        </div>
+                        <div class="blog-search">
+                            <div class="form-search">
+                                <div class="input-append">
+                                    <input type="text" class="span8 search-query" placeholder="Tìm sản phẩm theo tên ..." />
+                                    <button type="submit" class="btn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class="listProductItems clearfix">
+                                <li class="clearfix">
+                                    <div class="span3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="/css/images/212x192.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="thumbSetting">
+                                            <div class="thumbTitle">
+                                                <a href="#" class="invarseColor">iPhone 6 128Gb Việt Nam</a>
+                                            </div>
+                                            <div class="thumbPriceRate clearfix">
+                                                <span>$150.00</span>
+                                                <span class="strike-through fr">$200.00</span>
+
+                                            </div>
+                                            <div class="thumbDesc">
+                                                <p>CPU: Apple A8; HÐH:&nbsp;iOS 8.0; Màn hình: 4.7"; RAM/ROM: Chua rõ/128GB; Camera:&nbsp;8MP sau/1.2MP truoc</p>
+                                            </div>
+                                            <div class="thumbButtons">
+                                                <button class="btn btn-primary btn-small"><i class="icon-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="span3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="/css/images/212x192.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="thumbSetting">
+                                            <div class="thumbTitle">
+                                                <a href="#" class="invarseColor">iPhone 6 128Gb Việt Nam</a>
+                                            </div>
+                                            <div class="thumbPriceRate clearfix">
+                                                <span>$150.00</span>
+                                                <span class="strike-through fr">$200.00</span>
+
+                                            </div>
+                                            <div class="thumbDesc">
+                                                <p>CPU: Apple A8; HÐH:&nbsp;iOS 8.0; Màn hình: 4.7"; RAM/ROM: Chua rõ/128GB; Camera:&nbsp;8MP sau/1.2MP truoc</p>
+                                            </div>
+                                            <div class="thumbButtons">
+                                                <button class="btn btn-primary btn-small"><i class="icon-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="span3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="/css/images/212x192.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="thumbSetting">
+                                            <div class="thumbTitle">
+                                                <a href="#" class="invarseColor">iPhone 6 128Gb Việt Nam</a>
+                                            </div>
+                                            <div class="thumbPriceRate clearfix">
+                                                <span>$150.00</span>
+                                                <span class="strike-through fr">$200.00</span>
+
+                                            </div>
+                                            <div class="thumbDesc">
+                                                <p>CPU: Apple A8; HÐH:&nbsp;iOS 8.0; Màn hình: 4.7"; RAM/ROM: Chua rõ/128GB; Camera:&nbsp;8MP sau/1.2MP truoc</p>
+                                            </div>
+                                            <div class="thumbButtons">
+                                                <button class="btn btn-primary btn-small"><i class="icon-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="span3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="/css/images/212x192.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="thumbSetting">
+                                            <div class="thumbTitle">
+                                                <a href="#" class="invarseColor">iPhone 6 128Gb Việt Nam</a>
+                                            </div>
+                                            <div class="thumbPriceRate clearfix">
+                                                <span>$150.00</span>
+                                                <span class="strike-through fr">$200.00</span>
+
+                                            </div>
+                                            <div class="thumbDesc">
+                                                <p>CPU: Apple A8; HÐH:&nbsp;iOS 8.0; Màn hình: 4.7"; RAM/ROM: Chua rõ/128GB; Camera:&nbsp;8MP sau/1.2MP truoc</p>
+                                            </div>
+                                            <div class="thumbButtons">
+                                                <button class="btn btn-primary btn-small"><i class="icon-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="span3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="/css/images/212x192.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="thumbSetting">
+                                            <div class="thumbTitle">
+                                                <a href="#" class="invarseColor">iPhone 6 128Gb Việt Nam</a>
+                                            </div>
+                                            <div class="thumbPriceRate clearfix">
+                                                <span>$150.00</span>
+                                                <span class="strike-through fr">$200.00</span>
+
+                                            </div>
+                                            <div class="thumbDesc">
+                                                <p>CPU: Apple A8; HÐH:&nbsp;iOS 8.0; Màn hình: 4.7"; RAM/ROM: Chua rõ/128GB; Camera:&nbsp;8MP sau/1.2MP truoc</p>
+                                            </div>
+                                            <div class="thumbButtons">
+                                                <button class="btn btn-primary btn-small"><i class="icon-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="pagination pagination-right">
+                            <span class="pull-left desc">Trang <b>1</b> của <b>9</b> trang. (Tất cả có <b>50</b> sản phẩm)</span>
+                            <ul>
+                                <li>
+                                    <a class="invarseColor" href="#" title="first">«</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#" title="previous">←</a>
+                                </li>
+                                <li class="active">
+                                    <a class="invarseColor" href="#">1</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#">2</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#">2</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#">3</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#" title="next">→</a>
+                                </li>
+                                <li>
+                                    <a class="invarseColor" href="#" title="last">»</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <aside class="span3">
+
+
+                        <div class="categories">
+                            <div class="titleHeader clearfix">
+                                <h3>Hãng Sản Xuất</h3>
+                            </div>
+                            <ul class="unstyled">
+                                <li>
+                                    <a class="btn-primary category" href="#">
+                                        <i class="icon-caret-right"></i>
+                                        Điện Thoại
+                                    </a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a class="invarseColor" href="#">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor active" href="#">Nokia</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Sony</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Skyphone</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="btn-primary category" href="#">
+                                        <i class="icon-caret-right"></i>
+                                        Máy Tính Bảng
+                                    </a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a class="invarseColor" href="#">Ipad</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor active" href="#">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="btn-primary category" href="#">
+                                        <i class="icon-caret-right"></i>
+                                        Lapop
+                                    </a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a class="invarseColor active" href="#">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a class="invarseColor" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+                        <div class="special">
+                            <div class="titleHeader clearfix">
+                                <h3>Tin Mới Nhất</h3>
+                            </div>
+                            <ul class="varticle-ItemsTiny">
+                                <li class="span4 clearfix">
+                                    <div class="thumbImage">
+                                        <a href="#">
+                                            <img src="/css/images/92x92.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbSetting">
+                                        <div class="thumbTitle">
+                                            <a href="#" class="invarseColor">
+                                                Mua điện thoại trả góp lãi suất 0%...
+                                            </a>
+                                        </div>
+                                        <ul class="unstyled blog-content-date">
+                                            <li class="pull-right">
+                                                <i class="icon-comments"></i>15
+                                            </li>
+                                            <li class="pull-left">
+                                                <i class="icon-calendar"></i>11/12/2015
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="span4 clearfix">
+                                    <div class="thumbImage">
+                                        <a href="#">
+                                            <img src="/css/images/92x92.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbSetting">
+                                        <div class="thumbTitle">
+                                            <a href="#" class="invarseColor">
+                                                Mua iPhone 5C 16Gb trúng iPhone 5C...
+                                            </a>
+                                        </div>
+                                        <ul class="unstyled blog-content-date">
+                                            <li class="pull-right">
+                                                <i class="icon-comments"></i>15
+                                            </li>
+                                            <li class="pull-left">
+                                                <i class="icon-calendar"></i>11/12/2015
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="span4 clearfix">
+                                    <div class="thumbImage">
+                                        <a href="#">
+                                            <img src="/css/images/92x92.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbSetting">
+                                        <div class="thumbTitle">
+                                            <a href="#" class="invarseColor">
+                                                Khuyến mãi phụ kiện đồng giá...
+                                            </a>
+                                        </div>
+                                        <ul class="unstyled blog-content-date">
+                                            <li class="pull-right">
+                                                <i class="icon-comments"></i>15
+                                            </li>
+                                            <li class="pull-left">
+                                                <i class="icon-calendar"></i>11/12/2015
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="span4 clearfix">
+                                    <div class="thumbImage">
+                                        <a href="#">
+                                            <img src="/css/images/92x92.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbSetting">
+                                        <div class="thumbTitle">
+                                            <a href="#" class="invarseColor">
+                                                Điểm danh 6 máy tính bảng...
+                                            </a>
+                                        </div>
+                                        <ul class="unstyled blog-content-date">
+                                            <li class="pull-right">
+                                                <i class="icon-comments"></i>15
+                                            </li>
+                                            <li class="pull-left">
+                                                <i class="icon-calendar"></i>11/12/2015
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="span4 clearfix">
+                                    <div class="thumbImage">
+                                        <a href="#">
+                                            <img src="/css/images/92x92.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbSetting">
+                                        <div class="thumbTitle">
+                                            <a href="#" class="invarseColor">
+                                                Xả hàng iPad Like New giá 5.49 tr...
+                                            </a>
+                                        </div>
+                                        <ul class="unstyled blog-content-date">
+                                            <li class="pull-right">
+                                                <i class="icon-comments"></i>15
+                                            </li>
+                                            <li class="pull-left">
+                                                <i class="icon-calendar"></i>11/12/2015
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                </div>
+            </div>
+
+
+
+            <footer>
+                <div class="footerOuter">
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="titleHeader clearfix">
+                                    <h3>Hỗ trợ khách hàng</h3>
+                                </div>
+                                <div class="usefullLinks">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <ul class="unstyled">
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Giới thiệu công ty
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Tiêu chí bán hàng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Danh sách đối tác
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hệ thống các siêu thị
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="span6">
+                                            <ul class="unstyled">
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hướng dẫn mua hàng online
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Hướng dẫn thanh toán
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Chính sách đổi - trả - bảo hành
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="invarseColor" href="#">
+                                                        <i class="icon-caret-right"></i>
+                                                        Chăm sóc khách hàng
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="titleHeader clearfix">
+                                    <h3>Thông Tin Liên Hệ</h3>
+                                </div>
+                                <div class="contactInfo">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-volume-up"></i></button>
+                                            <a class="invarseColor" href="#">083.876.678</a>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-envelope-alt"></i></button>
+                                            <a class="invarseColor" href="#">ltv.pro@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-small"><i class="icon-map-marker"></i></button>
+                                            88 Đại Lộ BD, TDM, BD.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="span3">
+                                <div class="titleHeader clearfix">
+                                    <h3>Đăng Ký Nhận QC</h3>
+                                </div>
+                                <div class="newslatter">
+                                    <div>
+                                        <input class="input-block-level" type="text" placeholder="Mời nhập họ tên..." />
+                                        <input class="input-block-level" type="text" placeholder="Mời nhập email..." />
+                                        <button class="btn btn-block" type="submit">Đăng Ký</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="payments inline pull-right">
+                                <li class="visia"></li>
+                                <li class="paypal"></li>
+                                <li class="electron"></li>
+                                <li class="discover"></li>
+                            </ul>
+                            <p>© Copyrights 2016 LTV.Pro</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+</body>
+</html>

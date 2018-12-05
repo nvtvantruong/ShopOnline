@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       Chỉnh sửa / Thêm Mới Hình Ảnh
+    </title>
+    <meta http-equiv="refresh" content="1860" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--CSS-->
+    <link rel="icon" href="/Admin/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="/Admin/css/full-css-import.css" />
+    <script src="/Admin/javascript/fullobf.js" charset="utf-8"></script>
+    <script src="/tinyeditor/1.jquery.tinymce.min.js"></script>
+    <script src="/tinyeditor/2.tinymce.min.js"></script>
+    <script src="/tinyeditor/3.tinymce.customfunction.js"></script>
+</head>
+<body>
+    <form>
+        <div class="wrapper">
+
+            <div class="header">
+                <!--Nút ẩn/hiện menu bên góc trái-->
+                <ul class="header_menu">
+                    <li class="list_icon"><a href="#" class="tipr" title="Truy cập nhanh menu">&nbsp;</a></li>
+                </ul>
+                <!--Logo-->
+                <a href="Default.html" class="logo">
+                    COMPUTING - ADMIN CONTROL PANEL
+                </a>
+            </div>
+
+            <div class="menu">
+                <div class="breadLine">
+                    <div class="arrow"></div>
+                    <div class="adminControl active">
+                        Xin chào, <b>admin</b>
+                    </div>
+                </div>
+
+                <div class="admin">
+                    <div class="image">
+                        <img src="../../FileUploads/Account/8761ea0b-776c-4504-a845-58d5617d90f4.png" class="use-avatar" />
+                    </div>
+                    <ul class="control">
+                        <li>
+                            <span class="icon-user"></span>
+                            <a href="AccountEdit.html?id=admin">Lê Minh Hiếu</a>
+                        </li>
+                        <li>
+                            <span class="icon-cog"></span>
+                            <a href="AccountPasswordChange.html">Đổi mật khẩu</a>
+                        </li>
+                        <li>
+                            <span class="icon-off"></span>
+                            <a href="#">Thoát</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="navigation">
+                    <!--Dasboard-->
+                    <li class="active">
+                        <a href="Default.html">
+                            <span class="isw-grid"></span>
+                            <span class="text">Bàn Làm Việc</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--AccountCategory-->
+                    <li>
+                        <a href="AccountCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Tài Khoản</span>
+                        </a>
+                    </li>
+
+                    <!--Account-->
+                    <li>
+                        <a href="AccountList.html">
+                            <span class="isw-users"></span>
+                            <span class="text">Tài Khoản</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--ArticleMainCategory-->
+                    <li>
+                        <a href="ArticleMainCategoryList.html">
+                            <span class="isw-folder"></span>
+                            <span class="text">Loại Tin Tức - Cấp Cha</span>
+                        </a>
+                    </li>
+                    <!--ArticleCategory-->
+                    <li>
+                        <a href="ArticleCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Tin Tức - Cấp Con</span>
+                        </a>
+                    </li>
+
+                    <!--Article-->
+                    <li>
+                        <a href="ArticleList.html">
+                            <span class="isw-documents"></span>
+                            <span class="text">Tin Tức</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--PictureMainCategory-->
+                    <li>
+                        <a href="PictureMainCategoryList.html">
+                            <span class="isw-folder"></span>
+                            <span class="text">Loại Hình Ảnh - Cấp Cha</span>
+                        </a>
+                    </li>
+                    <!--PictureCategory-->
+                    <li>
+                        <a href="PictureCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Hình Ảnh - Cấp Con</span>
+                        </a>
+                    </li>
+
+                    <!--Picture-->
+                    <li>
+                        <a href="PictureList.html">
+                            <span class="isw-picture"></span>
+                            <span class="text">Hình Ảnh</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+
+                    <!--ContactCategory-->
+                    <li>
+                        <a href="ContactCategoryList.html">
+                            <span class="isw-archive"></span>
+                            <span class="text">Loại Thư Liên Hệ</span>
+                        </a>
+                    </li>
+
+                    <!--Contact-->
+                    <li>
+                        <a href="ContactList.html">
+                            <span class="isw-mail"></span>
+                            <span class="text">Thư Liên Hệ</span>
+                        </a>
+                        <div class="dr"><span></span></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+
+                <div class="breadLine">
+                    <ul class="breadcrumb">
+                        <!--Nút ẩn/hiện menu bên góc trái-->
+                        <li>
+                            <a href="#" title="Ẩn thanh menu" class="sidebarControl menu-arrow">
+                                <span class="icon-arrow-left"></span>
+                            </a>
+                        </li>
+                        <!--Thanh breadcrumb-->
+                        <li>
+                            <a href="Default.html">Bàn Làm Việc</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="PictureMainCategoryList.html">Danh mục hình ảnh (cấp cha)</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="PictureCategoryList.html">Danh mục hình ảnh (cấp con)</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="PictureList.html">Danh mục hình ảnh (cấp con)</a>
+                            <span class="divider">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="#">Chỉnh Sửa / Thêm Mới Hình ảnh</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="workplace">
+                    <!--Tiêu đề-->
+                    <div class="page-header">
+                        <h1>
+                            Thêm / Chỉnh sửa hình ảnh
+                        </h1>
+                    </div>
+                    <!--Nội dung-->
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="head clearfix">
+                                <div class="isw-list">
+                                </div>
+                                <h1>
+                                    Thêm / Chỉnh sửa hình ảnh
+                                </h1>
+                            </div>
+                            <div class="block-fluid customize accordion">
+                                <h3>
+                                    Thông tin cơ bản
+                                </h3>
+                                <div class="article-basic-info">
+                                    <div>
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Loại danh mục:
+                                            </div>
+                                            <div class="span10">
+                                                <select></select>
+                                            </div>
+                                        </div>
+                                        <!--Mã số + vị trí-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Mã số:
+                                            </div>
+                                            <div class="span2">
+                                                <input type="text" class="tipb" readonly="readonly" title="Mã số tự động (không cần nhập)" />
+                                            </div>
+                                            <div class="span1">
+                                                Vị trí:
+                                            </div>
+                                            <div class="span1" style="margin-left: 2px;">
+                                                <input type="text" class="tipb" title="Dùng để sắp xếp thứ tự" />
+                                            </div>
+                                            <div class="span1">
+                                                Code:
+                                            </div>
+                                            <div class="span2">
+                                                <input type="text" class="tipb" title="Dùng để tìm kiếm hoặc phân loại" />
+                                            </div>
+                                            <div class="span3">
+                                                <span>(Vị trí và Code: được phép để trống)</span>
+                                            </div>
+                                        </div>
+                                        <!--Tiêu đề-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Tiêu đề:
+                                            </div>
+                                            <div class="span10">
+                                                <input type="text" />
+                                                <span>Tiêu đề của bài báo. Nhập ngắn gọn, thể hiện đúng nội dung chính.</span>
+                                            </div>
+                                        </div>
+                                        <!--Mô tả-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Mô tả:
+                                            </div>
+                                            <div class="span10">
+                                                <textarea style="min-height: 100px; width: 100%;"></textarea>
+                                                <span>Tóm tắt ngắn gọn nội dung của bài báo.</span>
+                                            </div>
+                                        </div>
+                                        <!--Hình đại diện-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Hình đại diện:
+                                            </div>
+                                            <div class="span10">
+                                                <a href="../css/img/no_image.jpg" id="content_a_Avatar" class="fancybox lightbox-preview" rel="group">
+                                                    <img src="../css/img/no_image.jpg" id="content_img_Avatar" alt="avatar" class="default-image img-polaroid avatar-preview" style="width: 180px; height: 135px;" />
+                                                </a>
+                                                <br />
+                                                <input type="file" class="skip" preview="avatar-preview" />
+                                                <br />
+                                                <span>
+                                                    Hình đại diện cho bài báo. Bạn có thể upload hình mới nếu muốn.
+                                                    Các Loại file hỗ trợ: *.jpg, *.jpeg, *.gif, *.png
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!--Trích nguồn-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Trích nguồn:
+                                            </div>
+                                            <div class="span2">
+                                                <input type="text" />
+                                                <span>Tên trang nguồn. VD: Dân Trí</span>
+                                            </div>
+                                            <div class="span2" style="text-align: right">
+                                                Link nguồn:
+                                            </div>
+                                            <div class="span6">
+                                                <input type="text" />
+                                                <span>Liên kết trỏ đến bài ở trang nguồn nào? VD: http://dantri.com/tinmoi/index.html?id=1</span>
+                                            </div>
+                                        </div>
+                                        <!--Trạng thái-->
+                                        <div class="row-form clearfix">
+                                            <div class="span2">
+                                                Trạng thái:
+                                            </div>
+                                            <div class="span10">
+                                                <label class="checkbox inline">
+                                                    <input type="radio" checked="checked" />
+                                                    Cho phép hiển thị
+                                                </label>
+                                                <label class="checkbox inline">
+                                                    <input type="radio" />
+                                                    Tạm ẩn
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>
+                                    Nội dung chi tiết
+                                </h3>
+                                <div class="block-fluid " style="overflow: hidden;">
+                                    <textarea style="height: 100%; width: 100%" class="tinyeditor"></textarea>
+                                </div>
+                                <h3>
+                                    SEO Tag
+                                </h3>
+                                <div class="article-seotag-info">
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Từ khóa:
+                                        </div>
+                                        <div class="span10">
+                                            <input type="text" />
+                                            <span>
+                                                - Nhập các từ khóa chính của bài báo này. Điều này sẽ giúp trang tin có vị trí tốt trên google.com.vn.
+                                                <br />
+                                                - VD: bất động sản, bảng giá đất HCM, ...
+                                                <br />
+                                                - Phân cách các từ khóa bằng dấu phảy. Nên sử dụng tiếng Việt có dấu
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>
+                                    Thông tin khác
+                                </h3>
+                                <div class="article-other-info">
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Người đăng:
+                                        </div>
+                                        <div class="span10">
+                                            <input type="text" readonly="readonly" />
+                                            <span>
+                                                Tự động Lưu của người đăng. Không cho phép chỉnh sửa.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Ngày giờ đăng:
+                                        </div>
+                                        <div class="span10">
+                                            <input type="text" readonly="readonly" />
+                                            <span>
+                                                Tự động lưu ngày giờ đăng bài theo giờ hệ thống. Không cho phép chỉnh sửa
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row-form clearfix">
+                                        <div class="span2">
+                                            Tổng lượt xem:
+                                        </div>
+                                        <div class="span10">
+                                            <input type="text" readonly="readonly" />
+                                            <span>
+                                                Mỗi lần khách truy cập vào bài này, lượt xem sẽ tăng lên 1. Không cho phép chỉnh sửa.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Button-->
+                    <div class="row-fluid">
+                        <div class="span12" style="margin-top: -20px; background-color: #F2F2F2;">
+                            <div class="block-fluid  customize">
+                                <div class="row-form clearfix">
+                                    <div class="span2">
+                                        <a class="btn mybtn">
+                                            <i class="isw-save"></i>Lưu
+                                        </a>
+                                    </div>
+                                    <div class="span10">
+
+                                        <!--Thông báo-->
+                                        <div id="content_ucMessage_div_MessageBox" class="alert alert-info inline-msg">
+                                            <b id="content_ucMessage_b_Title">Thông báo:</b>
+                                            <span id="content_ucMessage_span_Message" class="message">Xin mời nhập dữ liệu rồi nhấn [Lưu] để đăng bài mới.</span>
+                                            <span class="close" title="Ẩn thông báo">X</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Link trở về-->
+                    <div class="tar">
+                        <a href="ArticleList.html" type="button" class="btn active">
+                            <i class="icon-arrow-left"></i>Trở về trang tin tức
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
