@@ -1,0 +1,251 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditUser.aspx.cs" Inherits="TestRegistration.EditUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.mobile.min.css" />
+    <link href="Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="frmRegistration row">
+            <table border="0" align="center" class="tab-content">
+                <tbody>
+                    <tr>
+                        <td>Username
+                        </td>
+                        <td>
+                            <label runat="server" id="labelUserName" class="font-weight-bold mb-0">User</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Avatar</td>
+                        <td>
+                            <input type="file" id="files">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input runat="server" id="inputName" placeholder="Tên của bạn" type="text" class="inputBox" name="Name" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>BrithDay</td>
+                        <td>
+                            <input id="inputBirthdate" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input runat="server" id="inputEmail" placeholder="Tên của bạn" type="text" class="inputBox" name="userEmail" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <input runat="server" id="inputAddress" placeholder="Tên của bạn" type="text" class="inputBox" name="userEmail" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Hoody</td>
+                        <td>
+                            <textarea id="editor" rows="10" cols="10" aria-label="editor"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>
+                            <input id="inputNationality" value="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input id="inputGender" value="0" />
+                        </td>
+                    </tr>
+                    <tr class="text-right">
+                        <td colspan="2">
+                            <%--<asp:Button Text="text" runat="server"  Text="a" />--%>
+                            <button id="btnClose" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button id="btnUpdate" type="button" onclick="btnUpdate_Click()" class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/kendo.all.min.js"></script>
+    <script>
+
+        var id = <%= Request.QueryString["uid"]%>;
+
+        $(document).ready(function () {
+            var dataGender = [
+               { text: "Không xác định", value: "0" },
+               { text: "Nam", value: "1" },
+               { text: "Nữ", value: "2" }
+            ];
+
+            $("#inputGender").kendoDropDownList({
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: dataGender,
+            });
+
+            $("#files").kendoUpload({
+                async: {
+                    saveUrl: "API/ApiUpload.ashx?func=Upload",
+                    removeUrl: "API/ApiUpload.ashx?func=Remove",
+                    autoUpload: false
+                },
+                success: onSuccess,
+                remove: onRemove,
+                multiple: true,
+                select: function(e) {
+                    var fileInfo = e.files[0];
+                    var wrapper = this.wrapper;
+
+                    setTimeout(function(){
+                        addPreview(fileInfo, wrapper);
+                    });
+                }
+            });
+
+            $("#inputBirthdate").kendoDatePicker({
+                start: "decade",
+                dateInput: true,
+                format: "dd/MM/yyyy",
+                min: new Date(1950, 0, 1),
+                max: new Date()
+            });
+
+            $("#editor").kendoEditor({ resizable: {
+                content: true,
+                toolbar: true
+            }});
+
+            var employee;
+
+            $.ajax({
+                url: "http://localhost:51430/API/ApiUser.ashx?func=getUserById&id=" + id, success: function (result) {
+
+                    employee = result.data;
+                    $('#labelUserName').text(employee[0].AccountName);
+                    $('#inputName').val(employee[0].Name);
+                    $('#inputEmail').val(employee[0].Email);
+                    $('#inputAddress').val(employee[0].Address);
+                    $('#inputGender').val(employee[0].Gender);
+
+                    var editor = $("#editor").data("kendoEditor");
+                    editor.value(htmlDecode(employee[0].Hobby));
+
+                    var dropGender = $("#inputGender").data("kendoDropDownList");
+                    dropGender.value($("#inputGender").val());
+
+                    var datepicker = $("#inputBirthdate").data("kendoDatePicker");
+                    datepicker.value(employee[0].Birthdate);
+
+
+
+                    $.ajax({
+                        url: "http://localhost:51430/aPi/APINationality.ashx?func=getNationality", success: function (result) {
+                            $("#inputNationality").kendoDropDownList({
+                                dataTextField: "Title",
+                                dataValueField: "ID",
+                                dataSource: result.data
+                            })
+                            var dropNationality = $("#inputNationality").data("kendoDropDownList");
+                            dropNationality.value(employee[0].Nationality_ID);
+                        }, error: function (err) { console.log(err) },
+                    });
+                }, error: function (err) { console.log(err) },
+            });
+
+        })
+
+        var resultApi = null;
+
+        function onSuccess(e) {
+            if (e.operation == "upload") {
+                resultApi = e.response.data;
+            }
+        }
+
+        function onRemove(e) {
+
+        }
+
+        function addPreview(file, wrapper) {
+            var raw = file.rawFile;
+            var reader  = new FileReader();
+
+            if (raw) {
+                reader.onloadend = function () {
+                    var preview = $("<img class='image-preview'>").attr("src", this.result);
+
+                    wrapper.find(".k-file[data-uid='" + file.uid + "'] .k-file-extension-wrapper")
+                      .replaceWith(preview);
+                };
+
+                reader.readAsDataURL(raw);
+            }
+        }
+
+        function htmlDecode(str) {
+            return $('<div/>').html(str).text();
+        }
+
+        function btnUpdate_Click(e) {
+            var userName = $('#labelUserName').text();
+            var name = $('#inputName').val();
+            var email = $('#inputEmail').val();
+            var address = $('#inputAddress').val();
+            var gender = $('#inputGender').val();
+
+            var editor = $("#editor").data("kendoEditor");
+            //hobby = editor.value();
+
+            var hobby = $('#editor').val();
+
+            var nationality_ID = $('#inputNationality').val();
+            var birthdate = $('#inputBirthdate').data('kendoDatePicker').value();
+
+            var dataPost ={ bUser :{ID: id,Name:name,Email:email,Address:address,Gender:gender,Hobby:hobby,Birthdate:birthdate,Avatar:resultApi, Nationality_ID: nationality_ID }};
+            var postFormData = new FormData();
+            PostData.append("data", JSON.stringify(dataPost));
+            PostData.append("FormImage", bValidFile.rawFile);
+
+            var dataFormImage = $CurrentContentElement.find('#files').data('kendoUpload');
+
+            if (!vtUtility.isNullOrUndefined(dataFormImage)) {
+                var ListFile = dataFormImage.getFiles();
+                if (!(vtUtility.isNullOrUndefined(ListFile) || ListFile.length == 0)) {
+                    var bValidFile = vtUtility.findObject(ListFile, function (obj) {
+                        return !(!vtUtility.isNullOrUndefined(obj.validationErrors) && obj.validationErrors.length > 0);
+                    });
+                };
+            };
+
+            $.ajax({
+                //url: "http://localhost:51430/API/ApiUser.ashx?func=UpdateUser&id=" + id + "&userName=" + userName + "&name=" + name + "&email=" + email + "&address=" + address + "&gender=" + gender,
+                url: "http://localhost:51430/API/ApiUser.ashx?func=UpdateUser",
+                cache: false,
+                type: "POST",
+                scriptCharset: "utf8",
+                dataType: "json",
+                data: postFormData,
+                success: function (result) {window.location.href = "/GridUser.aspx?Message=success";},
+                error: function () { window.location.href = "/GridUser.aspx?Message=error"; },
+            });
+        };
+    </script>
+</body>
+</html>
